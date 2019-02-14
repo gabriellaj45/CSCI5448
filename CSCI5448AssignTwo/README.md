@@ -1,5 +1,5 @@
 # CSCI5448 Homework 2
-Homework 2 Question 5
+Homework 2 Question 6
 
 No special instructions to run code
 
