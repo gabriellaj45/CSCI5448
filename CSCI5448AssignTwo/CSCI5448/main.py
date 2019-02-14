@@ -1,7 +1,7 @@
 from Shapes import *
 
 if __name__ == '__main__':
-    # need to use polymorphism here...
+    
     shapeList = []
 
     square1 = Square(4)
