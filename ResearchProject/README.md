@@ -4,6 +4,8 @@
 
 ### CSCI5448-001B, CSCI5448-001
 
+This program will illustrate the code examples in the presentation. Each file is a different OpenCV concept that being conveyed.
+
 - **Canny Edge**:
 Press the n key to go through the image set
 
