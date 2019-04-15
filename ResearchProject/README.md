@@ -7,7 +7,7 @@ Color Detection:
 Press the q key to close the image
 
 Contours:
-Press the q key to close the image
+Press the n key to go through the image set
 
 Homography:
 Click the corners of the board in clockwise order beginning with the top left corners and then press q to close the images
