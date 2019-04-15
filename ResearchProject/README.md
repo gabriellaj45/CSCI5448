@@ -1,5 +1,9 @@
 # CSCI5448 Graduate Research Project
 
+Team Members: Gabriella Johnson, Kyle Reinholt
+
+CSCI5448-001B, CSCI5448-001
+
 Canny Edge:
 Press the n key to go through the image set
 
@@ -14,7 +18,3 @@ Click the corners of the board in clockwise order beginning with the top left co
 
 Subtract:
 Press the n key to go through the image set
-
-Team Members: Gabriella Johnson, Kyle Reinholt
-
-CSCI5448-001B, CSCI5448-001
