@@ -2,8 +2,13 @@ import cv2
 
 
 if __name__ == '__main__':
-    # Read in image
+    # Read in image and show the original image
     image = cv2.imread('Board.jpg')
+    image = cv2.resize(image, (500, 500))
+    cv2.imshow("Original", image)
+    key = cv2.waitKey(0) & 0xFF
+    if key == ord('n'):
+        cv2.destroyAllWindows()
 
     # Convert image to grayscale and use canny edge
     grayScale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -20,7 +25,7 @@ if __name__ == '__main__':
     image = cv2.resize(image, (500, 500))
     cv2.imshow("Contours", image)
     key = cv2.waitKey(0) & 0xFF
-    if key == ord('q'):
+    if key == ord('n'):
         cv2.destroyAllWindows()
 
 

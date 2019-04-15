@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-import imutils
 
 
 if __name__ == "__main__":
