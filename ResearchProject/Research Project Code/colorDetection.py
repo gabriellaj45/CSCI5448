@@ -50,6 +50,7 @@ if __name__ == "__main__":
             image = cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 255), 2)
             cv2.putText(image, "yellow  color", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255))
 
+    # Show the Color Detection
     image = cv2.resize(image, (500, 500))
     cv2.imshow("Color Detection", image)
     key = cv2.waitKey(0) & 0xFF

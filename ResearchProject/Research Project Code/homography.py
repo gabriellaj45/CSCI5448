@@ -4,6 +4,7 @@ import imutils
 
 
 def mouse_handler(event, x, y, flags, data):
+    # Put red circles on image where clicked
     if event == cv2.EVENT_LBUTTONDOWN:
         cv2.circle(data['im'], (x, y), 1, (0, 0, 255), 2)
         cv2.imshow("Image", data['im'])
@@ -30,9 +31,10 @@ def get_four_points(im):
 
 
 if __name__ == '__main__':
-
+    # Read in image
     im_src = cv2.imread('0.jpg')
 
+    # Resize image for faster processing
     ratio = im_src.shape[0] / 800.0
     orig = im_src.copy()
     image = imutils.resize(im_src, height=800)
@@ -64,6 +66,7 @@ if __name__ == '__main__':
     # Warp source image to destination
     im_dst = cv2.warpPerspective(im_src, h, size[0:2])
 
+    # Show the warped image
     im_dst = cv2.resize(im_dst, (500, 500))
     cv2.imshow("Perspective Correction", im_dst)
     key = cv2.waitKey(0) & 0xFF
