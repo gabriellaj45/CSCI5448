@@ -1,4 +1,4 @@
-# CSCI5448 Graduate Research Project
+# CSCI5448 Graduate Research Project: OpenCV
 
 ## Team Members: Gabriella Johnson, Kyle Reinholt
 
