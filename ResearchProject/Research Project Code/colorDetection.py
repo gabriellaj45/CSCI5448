@@ -3,9 +3,10 @@ import numpy as np
 
 
 if __name__ == "__main__":
-
+    # read in the image
     image = cv2.imread('Board.jpg')
-
+    
+    # convert image from RGB to HSV
     hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
     # defining the Range of blue color
