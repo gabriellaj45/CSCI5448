@@ -21,10 +21,7 @@ def get_four_points(im):
     # Set the callback function for any mouse event
     cv2.imshow("Image", im)
     cv2.setMouseCallback("Image", mouse_handler, data)
-
-    key = cv2.waitKey(0) & 0xFF
-    if key == ord('n'):
-        cv2.destroyAllWindows()
+    cv2.waitKey(0) & 0xFF
 
     # Convert array to np.array
     points = np.vstack(data['points']).astype(float)
@@ -53,7 +50,9 @@ if __name__ == '__main__':
             [0, size[1]]
         ], dtype=float
     )
+
     print("Click the corners of the board in clockwise order starting with the top left corner")
+
     # Show image and wait for 4 clicks.
     im_src = cv2.resize(im_src, (700, 700))
     cv2.imshow("Image", im_src)
@@ -64,11 +63,10 @@ if __name__ == '__main__':
 
     # Warp source image to destination
     im_dst = cv2.warpPerspective(im_src, h, size[0:2])
-    # cv2.imwrite("NewBoard.jpg", im_dst)
-    '''
+
     im_dst = cv2.resize(im_dst, (500, 500))
     cv2.imshow("Perspective Correction", im_dst)
     key = cv2.waitKey(0) & 0xFF
     if key == ord('q'):
         cv2.destroyAllWindows()
-    '''
+
